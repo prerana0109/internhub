@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MY sign-up Page</title>
+  <link rel="stylesheet" href=<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="formregrecruiter.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="formregrecruiter.js" charset="utf-8"></script>
+</head>
+
+<body style="color:white;background-color:	#696969;">
+<div class="forbody">
+  <div class="forconti">
+            <h1><u>RECRUITERS</u></h1>
+            <h1>REGISTER NOW!</h1>
+    <form autocomplete="off" id="formrec" class="startregis2 form-row" action="formregrecruiter.php"  method="post">
+
+
+      <div class="form-group col-md-6">
+        <label class="" for="cname">Company Name :</label>
+        <div class="">
+          <input class=" form-control" type="text" id="cname" name="cname" required>
+        </div>
+      <span id="messagecn"></span>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label class="" for="cmname">Company manager :</label>
+              <div class="">
+          <input class="form-control" type="text" id="cmname" name="cmname" required>
+      <span id="cmmessage"></span>
+        </div>
+      </div>
+
+      <!-- <div class="form-group  col-md-6">
+        <label class="" for="dname">Domain :</label>
+        <div class="">
+          <input class="form-control" type="text" id="dname" name="dname"required>
+        <span id="messaged"></span>
+        </div>
+      </div> -->
+
+      <div class="form-group form-check col-md-6">
+        <label class="" for="domain">Domain</label>
+        <div class="">
+          <select class="form-control" id="domain" class="domain" name="domain" required>
+            <option value=""  disabled selected>Domain of comapany :-</option>
+            <option class="form-control" value="technology">Technology</option>
+            <option class="form-control" value="marketing">Marketing</option>
+            <option class="form-control" value="law">Law</option>
+            <option class="form-control" value="art">Arts</option>
+            <option class="form-control" value="civil">Civil</option>
+            <option class="form-control" value="consultancy">Consultancy</option></option>
+          </select>
+        <span id="messagedomain"></span>
+        </div>
+      </div>
+
+
+      <div class="form-group col-md-6">
+        <label class="" for="emailc">E-mail :</label>
+        <div class="">
+          <input class="form-control" type="emailc" id="emailc" name="emailc"required>
+        <span id="messageec"></span>
+        </div>
+      </div>
+
+      <!-- <div class="form-group form-check col-md-6">
+        <label class="" for="">Gender</label>
+        <div class="">
+          <select class="form-control" id="gender" class="gender" name="gender" required>
+            <option value=""  disabled selected>Select your option</option>
+            <option class="form-control" value="male">Male</option>
+            <option class="form-control" value="female">Female</option>
+            <option class="form-control" value="other">Other</option>
+          </select>
+        <span id="messageg"></span>
+        </div>
+      </div> -->
+
+      <div class="form-group col-md-6">
+        <label class="" for="pwdc">Password :</label>
+        <div class="">
+          <input  class="form-control" type="password" id="pwdc" name="pwdc"required>
+  <span id="messagepwdc"></span>
+          <small id="passwordHelpBlock" class="form-text text-muted">
+          Min:1 lowercase, 1 uppercase, 1 digit(0,9), 1 special character, min-length(5), max-length(32)</small>
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label  class="" for="cpwdc">Confirm Password :</label>
+        <div class="">
+          <input class="form-control" type="password" id="cpwdc" name="cpwdc"required>
+          <span id="messagecpwdc"></span>
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label class="" for="phonecomp" >Contact Number :</label>
+        <div class="">
+          <input class="form-control" type="tel" id="phonecomp" name="phonecomp"required>
+        <span id="messagecnum" ></span>
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label class="" for="compregid" >Company Reg ID :</label>
+        <div class="">
+          <input class="form-control" type="tel" id="compregid" name="compregid"required>
+        <span id="messagecid" ></span>
+        </div>
+      </div>
+
+
+      <div class="form-group col-md-12">
+        <label class="" for="addrc">Address</label>
+        <div class="">
+          <textarea class="form-control" name="address" id="addrc" required></textarea>
+          <span id="messageaddrc"></span>
+        </div>
+      </div>
+
+      <!-- <div class="form-group col-md-6">
+        <label class="" for="birthday">Date of Birth</label>
+        <div class="">
+          <input class="form-control" type="date" id="birthday" name="birthday" max="2004-12-31" required >
+          <span id="messagedob"></span>
+          <small id="passwordHelpBlock" class="form-text text-muted">
+  You should be 16 years old to register.</small>
+
+        </div>
+      </div> -->
+
+      <div class="form-group col-md-12">
+        <label class="" for="descom">Description :</label>
+        <div class="">
+          <textarea class="form-control" name="descom" id="descom" required></textarea>
+          <span id="messagedescom"></span>
+        </div>
+      </div>
+
+      <div class="buttoncent">
+          <input style="width:100px;" type="submit" value="Register" id="registerec" class="btn btn-primary btn-primary-outline ">
+        </div>
+
+   </form>
+    </div>
+
+</div>
+
+</body>
+
+</html>

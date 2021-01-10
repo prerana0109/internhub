@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MY sign-up Page</title>
+  <link rel="stylesheet" href=<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">">
+  <link rel="stylesheet" href="website.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="website.js" charset="utf-8"></script>
+</head>
+
+<body style="color:white;background-color:	#696969;">
+<div class="forbod">
+  <div class="forcont">
+            <h1><u>STUDENTS</u></h1>
+            <h1>REGISTER NOW!</h1>
+    <form autocomplete="off" id="formstud" class="startregis form-row" action="form.php"  method="post">
+
+
+      <div class="form-group col-md-6">
+        <label class="" for="fname">First Name :</label>
+        <div class="">
+          <input class=" form-control" type="text" id="fname" name="fname" required>
+        </div>
+      <span id="messagef"></span>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label class="" for="lname">Last Name :</label>
+        <div class="">
+          <input class="form-control" type="text" id="lname" name="lname" required>
+      <span id="messagel"></span>
+        </div>
+      </div>
+
+      <div class="form-group  col-md-6">
+        <label class="" for="uname">Username :</label>
+        <div class="">
+          <input class="form-control" type="text" id="uname" name="uname"required>
+        <span id="messageu"></span>
+        </div>
+      </div>
+
+      <div class="form-group form-check col-md-6">
+        <label class="" for="course">Stream</label>
+        <div class="">
+          <select class="form-control" id="course" class="course" name="stream" required>
+            <option value=""  disabled selected>Course you are persuing :-</option>
+            <option class="form-control" value="science">Science</option>
+            <option class="form-control" value="commerce">Commerce</option>
+            <option class="form-control" value="business">Business</option>
+            <option class="form-control" value="technology">Law</option>
+            <option class="form-control" value="arts">Arts</option>
+            <option class="form-control" value="engineering">Engineering</option></option>
+          </select>
+        <span id="messagecourse"></span>
+        </div>
+      </div>
+
+
+      <div class="form-group col-md-6">
+        <label class="" for="email">E-mail :</label>
+        <div class="">
+          <input class="form-control" type="email" id="email" name="email"required>
+        <span id="messagee"></span>
+        </div>
+      </div>
+
+      <div class="form-group form-check col-md-6">
+        <label class="" for="">Gender</label>
+        <div class="">
+          <select class="form-control" id="gender" class="gender" name="gender" required>
+            <option value=""  disabled selected>Select your option</option>
+            <option class="form-control" value="male">Male</option>
+            <option class="form-control" value="female">Female</option>
+            <option class="form-control" value="other">Other</option>
+          </select>
+        <span id="messageg"></span>
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label class="" for="pwd">Password :</label>
+        <div class="">
+          <input  class="form-control" type="password" id="pwd" name="pwd"required>
+  <span id="messagepwd"></span>
+          <small id="passwordHelpBlock" class="form-text text-muted">
+          Min:1 lowercase, 1 uppercase, 1 digit(0,9), 1 special character, min-length(5), max-length(32)</small>
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label  class="" for="cpwd">Confirm Password :</label>
+        <div class="">
+          <input class="form-control" type="password" id="cpwd" name="cpwd"required>
+          <span id="messagecpwd"></span>
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label class="" for="addr">City</label>
+        <div class="">
+          <textarea class="form-control" name="city" id="addr" required></textarea>
+          <span id="messageaddr"></span>
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label class="" for="addr">Address</label>
+        <div class="">
+          <textarea class="form-control" name="address" id="addr" required></textarea>
+          <span id="messageaddr"></span>
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label class="" for="">Mobile Number :</label>
+        <div class="">
+          <input class="form-control" type="tel" id="phone" name="phone"required>
+        <span id="messagemob"></span>
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label class="" for="birthday">Age</label>
+        <div class="">
+          <input class="form-control" type="text" id="birthday" name="age" max="2004-12-31" required >
+          <span id="messagedob"></span>
+          <small id="passwordHelpBlock" class="form-text text-muted">
+  You should be 16 years old to register.</small>
+
+        </div>
+      </div>
+
+      <div class="form-group col-md-12">
+        <label class="" for="desc">Description :</label>
+        <div class="">
+          <textarea class="form-control" name="desc" id="desc" required></textarea>
+          <span id="messagedesc"></span>
+        </div>
+      </div>
+
+      <div class="buttoncent">
+          <input style="width:100px;" type="submit" value="Register" id="register" class="btn btn-primary btn-primary-outline ">
+        </div>
+
+   </form>
+    </div>
+
+</div>
+
+</body>
+
+</html>
